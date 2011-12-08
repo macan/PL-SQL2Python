@@ -1,0 +1,5 @@
+This project provides a tool to transform Oracle PL/SQL package to python package, and a runtime library to simulate Oracle internal functions. 
+
+Right now, there is only a binary transformer(from Oracle PL/SQL to HiveQL) for you to evaluate.
+
+I will add the missing runtime libs in a few days.
