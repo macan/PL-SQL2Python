@@ -1,5 +1,15 @@
+* Project description
+
 This project provides a tool to transform Oracle PL/SQL package to python package, and a runtime library to simulate Oracle internal functions. 
 
-Right now, there is only a binary transformer(from Oracle PL/SQL to HiveQL) for you to evaluate.
+* How to use it?
+
+o2t.exe [/path/to/oracle/plsql/script]
+
+The source scripts MUST have a suffix as ".sql", and the target python scripts are outputed in the same directory. For example, "ot2.txt c:\pkg-abc.sql" would output a python file named pkg-abc.py in "c:\".
+
+* Issues
+
+Right now, there is only a windows binary transformer(from Oracle PL/SQL to HiveQL) for you to evaluate.
 
 I will add the missing runtime libs in a few days.
