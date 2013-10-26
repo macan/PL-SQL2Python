@@ -1,0 +1,18 @@
+#!/bin/bash
+
+if [ "x$TDWPL_HOME" == "x" ]; then
+    TDWPL_HOME=.
+fi
+
+PY_VERSION=`/usr/bin/env python -V 2>&1 | awk '{print $2}' | sed -e 's/\.//g'`
+PYV=`/usr/bin/env python -V 2>&1`
+
+if [ $PY_VERSION -gt 240  ]; then
+    echo "Python version is OK."
+else
+    echo "The TDW/PL lib and tool only works in Python 2.4.* and higher version"
+    echo "Your version is ${PYV}"
+    exit
+fi
+
+/usr/bin/env python ${TDWPL_HOME}/tdwpl.py $*

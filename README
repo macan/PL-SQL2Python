@@ -13,3 +13,20 @@ The source scripts MUST have a suffix as ".sql", and the target python scripts a
 Right now, there is only a windows binary transformer(from Oracle PL/SQL to HiveQL) for you to evaluate.
 
 I will add the missing runtime libs in a few days.
+
+* Updates
+
+I have add the source code for o2t transformer.
+
+PLSQL.g is the core ANTLR code to parse plsql script to python script (target for Hive environment). Use run_antlrworks.sh to generate parser code in 'output' directory.
+
+ANTLRNoCaseFileStream.java and pl2py.java are wrappers for ANTLR generated classes.
+
+* How to Compile
+make
+make run
+
+Put your plsql code in 'input' directory. After you call 'make run', the generated python scripts are in 'result' directory.
+
+Contributed it and enjoy it, thank you!
+
