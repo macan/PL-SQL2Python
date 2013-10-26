@@ -30,3 +30,5 @@ Put your plsql code in 'input' directory. After you call 'make run', the generat
 
 Contributed it and enjoy it, thank you!
 
+* Known Issues
+Cursor has not been well supported yet.
